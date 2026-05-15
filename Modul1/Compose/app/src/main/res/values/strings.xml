@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DoubleDice</string>
+    <string name="roll">Roll</string>
+</resources>
