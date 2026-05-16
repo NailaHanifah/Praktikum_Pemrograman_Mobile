@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/costOfServiceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/enter_cost_of_service"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <RadioGroup
+            android:id="@+id/tipOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/optionTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_twenty"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/optionEighteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_eighteen"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/optionFifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_fifteen"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/roundUpSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/round_up"
+            android:layout_marginTop="44dp"
+            android:padding="12dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/tipResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_default"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate" />
+    </LinearLayout>
+</ScrollView>
