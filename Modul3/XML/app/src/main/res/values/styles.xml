@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ListFilm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#90CAF9</item>
+    </style>
+
+    <style name="RoundedImageView">
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>
